@@ -1,0 +1,2039 @@
+/* =========================================================
+   GLOBAL RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #fff;
+    color: #222;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero {
+    height: 200px;
+    background: url("https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&fit=crop&w=1600&q=80");
+    background-size: cover;
+    background-position: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(5, 25, 45, 0.65);
+}
+
+
+/* =========================================================
+   TOP BAR
+========================================================= */
+
+.top-bar {
+    width: 90%;
+    max-width: 1400px;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative;
+    z-index: 2;
+
+    padding-top: 30px;
+}
+
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo img {
+    width: 70px;
+    height: auto;
+    display: block;
+}
+
+.logo-text h2 {
+    color: #fff;
+    font-size: 38px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1;
+    font-style: italic;
+}
+
+.logo-text span {
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 6px;
+    display: block;
+    margin-top: 6px;
+    font-style: italic;
+}
+
+
+/* =========================================================
+   TOP MENU
+========================================================= */
+
+.top-menu {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.top-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+.top-menu a:hover {
+    color: #0080b3;
+}
+
+.top-menu i {
+    margin-right: 8px;
+}
+
+
+/* =========================================================
+   SECTION SCROLL OFFSET
+========================================================= */
+
+#overview,
+#masterplan,
+#amenities,
+#location {
+    scroll-margin-top: 120px;
+}
+
+
+/* =========================================================
+   MAIN MENU
+========================================================= */
+
+.menu {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 70px;
+
+    background: #fff;
+
+    padding: 25px 20px;
+
+    border-bottom: 1px solid #ececec;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+}
+
+.menu-item {
+    text-align: center;
+    color: #333;
+
+    cursor: pointer;
+
+    transition: color 0.3s ease;
+
+    text-decoration: none;
+
+    flex-shrink: 0;
+}
+
+.menu-item:hover {
+    color: #ef5a63;
+}
+
+.menu-item i {
+    display: block;
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.menu-item p {
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+
+    border-left: 2px solid #d8d8d8;
+
+    padding-left: 28px;
+}
+
+.menu-item:first-child p {
+    border-left: none;
+    padding-left: 0;
+}
+
+.active {
+    color: #ef5a63;
+}
+
+
+/* =========================================================
+   PROJECT SECTION
+========================================================= */
+
+.project-section {
+    width: 100%;
+    padding: 60px 8%;
+}
+
+
+/* =========================================================
+   MAIN CONTAINER
+========================================================= */
+
+.container {
+    width: 100%;
+    max-width: 1500px;
+    margin: auto;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: flex-start;
+
+    gap: 60px;
+}
+
+
+/* =========================================================
+   LEFT - SLIDER
+========================================================= */
+
+.slider {
+    width: 58%;
+
+    position: relative;
+
+    overflow: hidden;
+
+    flex-shrink: 0;
+}
+
+.slides {
+    position: relative;
+
+    width: 100%;
+    height: 620px;
+
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    opacity: 0;
+
+    transition: opacity 0.5s ease;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+
+/* =========================================================
+   SLIDER CONTROLS
+========================================================= */
+
+.slider-controls {
+    position: absolute;
+
+    left: 20px;
+    bottom: 20px;
+
+    background: #ff5d5d;
+
+    color: #fff;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    padding: 15px 22px;
+
+    z-index: 5;
+}
+
+.slider-controls button {
+    border: none;
+
+    background: none;
+
+    color: #fff;
+
+    font-size: 28px;
+
+    cursor: pointer;
+
+    line-height: 1;
+}
+
+.slider-controls span {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+/* =========================================================
+   RIGHT - CONTENT
+========================================================= */
+
+.content {
+    width: 32%;
+}
+
+.content h1 {
+    font-size: 40px;
+
+    color: #ff5d5d;
+
+    margin-bottom: 30px;
+
+    line-height: 1.2;
+}
+
+.content h4 {
+    font-size: 18px;
+
+    margin-bottom: 8px;
+
+    text-transform: uppercase;
+
+    font-weight: 500;
+
+    line-height: 1.4;
+}
+
+.location {
+    font-size: 14px;
+
+    margin-bottom: 30px;
+
+    line-height: 1.5;
+}
+
+.price {
+    color: #ff5d5d;
+
+    font-size: 26px;
+
+    margin-bottom: 12px;
+
+    font-weight: 300;
+}
+
+.size {
+    font-size: 14px;
+
+    color: #666;
+
+    font-weight: 600;
+
+    margin-bottom: 25px;
+}
+
+hr {
+    border: none;
+
+    height: 1px;
+
+    background: #cfcfcf;
+
+    margin-bottom: 20px;
+}
+
+.description {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 25px;
+}
+
+.description p {
+    font-size: 15px;
+
+    line-height: 1.6;
+
+    color: #333;
+}
+
+
+/* =========================================================
+   ENQUIRE BUTTON
+========================================================= */
+
+#enquiry-popup {
+    display: none;
+}
+
+.enquire-btn {
+    position: fixed;
+
+    left: 50%;
+    bottom: 20px;
+
+    transform: translateX(-50%);
+
+    display: block;
+
+    width: auto;
+
+    max-width: 90%;
+
+    padding: 15px 35px;
+
+    background: #5b2d17;
+
+    color: #fff;
+
+    border-radius: 22px;
+
+    cursor: pointer;
+
+    z-index: 99999;
+
+    font-size: 18px;
+
+    font-weight: 600;
+
+    letter-spacing: 1px;
+
+    line-height: 1.2;
+
+    text-align: center;
+
+    text-transform: uppercase;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+
+    transition:
+        background 0.3s ease,
+        box-shadow 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+/* =========================================================
+   ENQUIRE BUTTON SHINE
+========================================================= */
+
+.enquire-btn::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: -120%;
+
+    width: 60%;
+    height: 100%;
+
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255, 255, 255, 0.75),
+        transparent
+    );
+
+    transform: skewX(-25deg);
+
+    animation: shine 3s infinite;
+}
+
+.enquire-btn:hover {
+    background: #744125;
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
+
+    transform: translateX(-50%) translateY(-3px);
+}
+
+
+/* =========================================================
+   SHINE ANIMATION
+========================================================= */
+
+@keyframes shine {
+
+    0% {
+        left: -120%;
+    }
+
+    40% {
+        left: 170%;
+    }
+
+    100% {
+        left: 170%;
+    }
+}
+
+
+/* =========================================================
+   POPUP OVERLAY
+========================================================= */
+
+.popup-overlay {
+    position: fixed;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    padding: 20px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(0, 0, 0, 0.65);
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    overflow-y: auto;
+
+    z-index: 9999;
+
+    transition:
+        opacity 0.4s ease,
+        visibility 0.4s ease;
+}
+
+
+/* =========================================================
+   OPEN POPUP
+========================================================= */
+
+#enquiry-popup:checked ~ .popup-overlay {
+    opacity: 1;
+
+    visibility: visible;
+}
+
+
+/* =========================================================
+   POPUP BOX
+========================================================= */
+
+.popup-box {
+    position: relative;
+
+    width: 650px;
+
+    max-width: 100%;
+
+    max-height: 94vh;
+
+    overflow-y: auto;
+
+    padding: 35px;
+
+    background: #fff;
+
+    border-radius: 30px;
+
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+
+    animation: popup 0.35s ease;
+}
+
+
+/* =========================================================
+   POPUP ANIMATION
+========================================================= */
+
+@keyframes popup {
+
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+/* =========================================================
+   CLOSE BUTTON
+========================================================= */
+
+.close-btn {
+    position: absolute;
+
+    top: 12px;
+    right: 18px;
+
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    color: #222;
+
+    font-size: 34px;
+
+    line-height: 1;
+
+    cursor: pointer;
+
+    border-radius: 50%;
+
+    z-index: 10;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease;
+}
+
+.close-btn:hover {
+    background: #f2f2f2;
+
+    color: #603728;
+}
+
+
+/* =========================================================
+   POPUP HEADING
+========================================================= */
+
+.popup-box h2 {
+    margin-bottom: 30px;
+
+    padding: 0 35px;
+
+    text-align: center;
+
+    color: #603728;
+
+    font-size: 38px;
+
+    font-weight: 500;
+
+    line-height: 1.25;
+}
+
+
+/* =========================================================
+   FORM
+========================================================= */
+
+.popup-box form {
+    width: 100%;
+}
+
+
+/* =========================================================
+   FORM INPUTS
+========================================================= */
+
+.popup-box input[type="text"],
+.popup-box input[type="tel"],
+.popup-box input[type="email"] {
+
+    display: block;
+
+    width: 100%;
+
+    height: auto;
+
+    padding: 16px;
+
+    margin-bottom: 18px;
+
+    border: 1px solid #b8b8b8;
+
+    border-radius: 15px;
+
+    outline: none;
+
+    background: #fff;
+
+    color: #222;
+
+    font-family: inherit;
+
+    font-size: 18px;
+
+    line-height: 1.4;
+
+    transition:
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/* =========================================================
+   TEXTAREA
+========================================================= */
+
+.popup-box textarea {
+
+    display: block;
+
+    width: 100%;
+
+    min-height: 130px;
+
+    padding: 16px;
+
+    margin-bottom: 18px;
+
+    border: 1px solid #b8b8b8;
+
+    border-radius: 15px;
+
+    outline: none;
+
+    resize: vertical;
+
+    background: #fff;
+
+    color: #222;
+
+    font-family: inherit;
+
+    font-size: 18px;
+
+    line-height: 1.5;
+
+    transition:
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/* =========================================================
+   INPUT FOCUS
+========================================================= */
+
+.popup-box input[type="text"]:focus,
+.popup-box input[type="tel"]:focus,
+.popup-box input[type="email"]:focus,
+.popup-box textarea:focus {
+
+    border-color: #603728;
+
+    box-shadow: 0 0 8px rgba(96, 55, 40, 0.2);
+}
+
+
+/* =========================================================
+   PLACEHOLDER
+========================================================= */
+
+.popup-box input::placeholder,
+.popup-box textarea::placeholder {
+    color: #777;
+
+    opacity: 1;
+}
+
+
+/* =========================================================
+   CHECKBOX AREA
+========================================================= */
+
+.checkbox-area {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 10px;
+
+    width: 100%;
+
+    margin: 10px 0 25px;
+}
+
+
+/* =========================================================
+   AUTHORIZATION CHECKBOX
+========================================================= */
+
+.checkbox-area input[type="checkbox"] {
+
+    flex: 0 0 auto;
+
+    width: 18px;
+    height: 18px;
+
+    margin: 4px 0 0;
+
+    padding: 0;
+
+    cursor: pointer;
+
+    accent-color: #603728;
+}
+
+
+/* =========================================================
+   CHECKBOX LABEL
+========================================================= */
+
+.checkbox-area label {
+
+    flex: 1;
+
+    margin: 0;
+
+    color: #555;
+
+    font-size: 11px;
+
+    font-weight: 400;
+
+    line-height: 1.8;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   SUBMIT BUTTON
+========================================================= */
+
+.popup-box button[type="submit"] {
+
+    display: block;
+
+    width: auto;
+
+    margin: 0 auto;
+
+    padding: 15px 55px;
+
+    border: none;
+
+    border-radius: 15px;
+
+    background: #f4a47f;
+
+    color: #000;
+
+    font-family: inherit;
+
+    font-size: 24px;
+
+    font-weight: 500;
+
+    line-height: 1.2;
+
+    cursor: pointer;
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.popup-box button[type="submit"]:hover {
+
+    background: #ea9066;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================================================
+   IMAGE LIGHTBOX
+========================================================= */
+
+#popup {
+
+    position: fixed;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    padding: 20px;
+
+    display: none;
+
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(0, 0, 0, 0.9);
+
+    z-index: 99999;
+}
+
+
+/* =========================================================
+   LIGHTBOX IMAGE
+========================================================= */
+
+#popup img {
+
+    display: block;
+
+    width: auto;
+
+    max-width: 90%;
+
+    height: auto;
+
+    max-height: 88vh;
+
+    object-fit: contain;
+
+    border-radius: 5px;
+}
+
+
+/* =========================================================
+   LIGHTBOX CLOSE
+========================================================= */
+
+#popup span {
+
+    position: absolute;
+
+    top: 20px;
+    right: 35px;
+
+    color: #fff;
+
+    font-size: 55px;
+
+    line-height: 1;
+
+    cursor: pointer;
+
+    z-index: 100000;
+
+    transition: transform 0.3s ease;
+}
+
+#popup span:hover {
+    transform: scale(1.1);
+}
+
+
+/* =========================================================
+   SLIDER SCROLL ANIMATION
+========================================================= */
+
+@keyframes scroll {
+
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-340px * 6));
+    }
+}
+
+
+/* =========================================================
+   BOOK BUTTON
+========================================================= */
+
+.book-btn {
+
+    position: fixed;
+
+    right: -78px;
+    top: 45%;
+
+    transform: rotate(-90deg);
+
+    background: #ef5a63;
+
+    color: #fff;
+
+    padding: 14px 35px;
+
+    letter-spacing: 1px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    text-decoration: none;
+
+    z-index: 9998;
+
+    transition: background 0.3s ease;
+}
+
+.book-btn:hover {
+    background: #d94750;
+}
+
+
+/* =========================================================
+   WHATSAPP
+========================================================= */
+
+.whatsapp {
+
+    position: fixed;
+
+    bottom: 20px;
+    right: 20px;
+
+    width: 65px;
+    height: 65px;
+
+    background: #fff;
+
+    border-radius: 15px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+    text-decoration: none;
+
+    z-index: 9997;
+}
+
+
+/* =========================================================
+   WHATSAPP ICON
+========================================================= */
+
+.whatsapp i {
+
+    font-size: 42px;
+
+    color: #25d366;
+}
+
+
+/* =========================================================
+   WHATSAPP BADGE
+========================================================= */
+
+.whatsapp .badge {
+
+    position: absolute;
+
+    top: 5px;
+    left: 5px;
+
+    background: red;
+
+    color: #fff;
+
+    font-size: 12px;
+
+    width: 18px;
+    height: 18px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* =========================================================
+   WHATSAPP HOVER
+========================================================= */
+
+.whatsapp:hover {
+    background: #f5f5f5;
+}
+
+
+/* =========================================================
+   IFRAME
+========================================================= */
+
+.masterplan-frame {
+    display: block;
+
+    width: 100%;
+
+    height: 100vh;
+
+    border: none;
+}
+
+.amenities-frame {
+    display: block;
+
+    width: 100%;
+
+    height: 144vh;
+
+    border: none;
+}
+
+.location-frame {
+    display: block;
+
+    width: 100%;
+
+    height: 155vh;
+
+    border: none;
+}
+
+
+/* =========================================================
+   LARGE TABLET / SMALL LAPTOP
+   1200px
+========================================================= */
+
+@media (max-width: 1200px) {
+
+    .menu {
+        gap: 40px;
+    }
+
+    .project-section {
+        padding: 50px 5%;
+    }
+
+    .container {
+        gap: 40px;
+    }
+
+    .slider {
+        width: 56%;
+    }
+
+    .content {
+        width: 38%;
+    }
+
+    .slides {
+        height: 550px;
+    }
+
+    .content h1 {
+        font-size: 36px;
+    }
+}
+
+
+/* =========================================================
+   TABLET
+   992px
+========================================================= */
+
+@media (max-width: 992px) {
+
+    /* HERO */
+
+    .hero {
+        height: 180px;
+    }
+
+    .top-bar {
+        width: 94%;
+        padding-top: 25px;
+    }
+
+    .logo img {
+        width: 60px;
+    }
+
+    .logo-text h2 {
+        font-size: 32px;
+    }
+
+    .logo-text span {
+        font-size: 12px;
+        letter-spacing: 4px;
+    }
+
+    .top-menu {
+        gap: 18px;
+    }
+
+    .top-menu a {
+        font-size: 13px;
+    }
+
+
+    /* MENU */
+
+    .menu {
+        gap: 25px;
+
+        padding: 20px 15px;
+
+        overflow-x: auto;
+
+        justify-content: flex-start;
+    }
+
+    .menu::-webkit-scrollbar {
+        display: none;
+    }
+
+    .menu-item p {
+        font-size: 12px;
+        padding-left: 15px;
+    }
+
+    .menu-item i {
+        font-size: 21px;
+    }
+
+
+    /* PROJECT */
+
+    .project-section {
+        padding: 45px 5%;
+    }
+
+    .container {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .slider {
+        width: 100%;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .slides {
+        height: 500px;
+    }
+
+    .content h1 {
+        font-size: 38px;
+    }
+
+    .description p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+
+    /* BOOK BUTTON */
+
+    .book-btn {
+        right: -72px;
+        top: 42%;
+        padding: 13px 30px;
+    }
+
+
+    /* IFRAME */
+
+    .masterplan-frame {
+        height: 100vh;
+    }
+
+    .amenities-frame {
+        height: 125vh;
+    }
+
+    .location-frame {
+        height: 130vh;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   768px
+========================================================= */
+
+@media (max-width: 768px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        height: 155px;
+
+        position: relative;
+
+        top: auto;
+    }
+
+    .top-bar {
+        width: 92%;
+
+        flex-direction: column;
+
+        justify-content: center;
+
+        gap: 15px;
+
+        padding-top: 20px;
+    }
+
+    .logo {
+        gap: 10px;
+    }
+
+    .logo img {
+        width: 50px;
+    }
+
+    .logo-text h2 {
+        font-size: 27px;
+        letter-spacing: 1px;
+    }
+
+    .logo-text span {
+        font-size: 9px;
+        letter-spacing: 3px;
+        margin-top: 4px;
+    }
+
+
+    /* TOP MENU */
+
+    .top-menu {
+        width: 100%;
+
+        display: flex;
+
+        justify-content: center;
+
+        gap: 15px;
+
+        flex-wrap: wrap;
+    }
+
+    .top-menu a {
+        font-size: 12px;
+    }
+
+    .top-menu i {
+        margin-right: 4px;
+    }
+
+
+    /* MAIN MENU */
+
+    .menu {
+        position: sticky;
+
+        top: 0;
+
+        width: 100%;
+
+        justify-content: flex-start;
+
+        gap: 20px;
+
+        padding: 15px 12px;
+
+        overflow-x: auto;
+
+        white-space: nowrap;
+    }
+
+    .menu-item {
+        min-width: 75px;
+    }
+
+    .menu-item i {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .menu-item p {
+        font-size: 10px;
+
+        letter-spacing: 0.7px;
+
+        padding-left: 12px;
+    }
+
+
+    /* SECTION */
+
+    .project-section {
+        padding: 30px 20px;
+    }
+
+    .container {
+        width: 100%;
+
+        flex-direction: column;
+
+        gap: 30px;
+    }
+
+
+    /* SLIDER */
+
+    .slider {
+        width: 100%;
+    }
+
+    .slides {
+        width: 100%;
+        height: 330px;
+    }
+
+    .slide {
+        width: 100%;
+        height: 100%;
+    }
+
+
+    /* SLIDER CONTROLS */
+
+    .slider-controls {
+        left: 12px;
+        bottom: 12px;
+
+        gap: 12px;
+
+        padding: 9px 14px;
+    }
+
+    .slider-controls button {
+        font-size: 22px;
+    }
+
+    .slider-controls span {
+        font-size: 17px;
+    }
+
+
+    /* CONTENT */
+
+    .content {
+        width: 100%;
+    }
+
+    .content h1 {
+        font-size: 28px;
+
+        margin-bottom: 20px;
+    }
+
+    .content h4 {
+        font-size: 16px;
+    }
+
+    .location {
+        font-size: 13px;
+
+        margin-bottom: 20px;
+    }
+
+    .price {
+        font-size: 22px;
+    }
+
+    .size {
+        font-size: 13px;
+
+        margin-bottom: 20px;
+    }
+
+    .description {
+        gap: 18px;
+    }
+
+    .description p {
+        font-size: 13px;
+
+        line-height: 1.6;
+    }
+
+
+    /* BOOK BUTTON */
+
+    .book-btn {
+        right: -67px;
+
+        top: 40%;
+
+        padding: 11px 25px;
+
+        font-size: 13px;
+    }
+
+
+    /* ENQUIRE BUTTON */
+
+    .enquire-btn {
+        bottom: 15px;
+
+        max-width: calc(100% - 100px);
+
+        padding: 12px 22px;
+
+        font-size: 14px;
+
+        border-radius: 18px;
+    }
+
+
+    /* WHATSAPP */
+
+    .whatsapp {
+        width: 52px;
+        height: 52px;
+
+        right: 12px;
+        bottom: 12px;
+
+        border-radius: 12px;
+    }
+
+    .whatsapp i {
+        font-size: 32px;
+    }
+
+    .whatsapp .badge {
+        width: 16px;
+        height: 16px;
+
+        top: 3px;
+        left: 3px;
+
+        font-size: 10px;
+    }
+
+
+    /* POPUP */
+
+    .popup-overlay {
+        padding: 12px;
+    }
+
+    .popup-box {
+        width: 100%;
+
+        max-height: 94vh;
+
+        padding: 25px 18px;
+
+        border-radius: 22px;
+    }
+
+    .popup-box h2 {
+        font-size: 27px;
+
+        padding: 0 25px;
+
+        margin-bottom: 22px;
+    }
+
+    .close-btn {
+        top: 8px;
+        right: 10px;
+
+        width: 35px;
+        height: 35px;
+
+        font-size: 29px;
+    }
+
+
+    /* INPUTS */
+
+    .popup-box input[type="text"],
+    .popup-box input[type="tel"],
+    .popup-box input[type="email"] {
+
+        padding: 13px;
+
+        margin-bottom: 14px;
+
+        border-radius: 12px;
+
+        font-size: 16px;
+    }
+
+    .popup-box textarea {
+
+        min-height: 110px;
+
+        padding: 13px;
+
+        margin-bottom: 14px;
+
+        border-radius: 12px;
+
+        font-size: 16px;
+    }
+
+
+    /* CHECKBOX */
+
+    .checkbox-area {
+        gap: 8px;
+
+        margin: 8px 0 20px;
+    }
+
+    .checkbox-area input[type="checkbox"] {
+        width: 17px;
+        height: 17px;
+    }
+
+    .checkbox-area label {
+        font-size: 9px;
+
+        line-height: 1.6;
+
+        letter-spacing: 0.7px;
+    }
+
+
+    /* SUBMIT */
+
+    .popup-box button[type="submit"] {
+
+        width: 100%;
+
+        padding: 13px 25px;
+
+        font-size: 19px;
+
+        border-radius: 12px;
+    }
+
+
+    /* LIGHTBOX */
+
+    #popup {
+        padding: 10px;
+    }
+
+    #popup img {
+        max-width: 96%;
+        max-height: 82vh;
+    }
+
+    #popup span {
+        top: 10px;
+        right: 15px;
+
+        font-size: 42px;
+    }
+
+
+    /* IFRAMES */
+
+    .masterplan-frame {
+        height: 80vh;
+    }
+
+    .amenities-frame {
+        height: 105vh;
+    }
+
+    .location-frame {
+        height: 110vh;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   480px
+========================================================= */
+
+@media (max-width: 480px) {
+
+    /* HERO */
+
+    .hero {
+        height: 140px;
+    }
+
+    .top-bar {
+        padding-top: 16px;
+        gap: 12px;
+    }
+
+    .logo img {
+        width: 44px;
+    }
+
+    .logo-text h2 {
+        font-size: 23px;
+    }
+
+    .logo-text span {
+        font-size: 8px;
+        letter-spacing: 2.5px;
+    }
+
+    .top-menu {
+        gap: 10px;
+    }
+
+    .top-menu a {
+        font-size: 10px;
+    }
+
+
+    /* MENU */
+
+    .menu {
+        gap: 14px;
+
+        padding: 12px 10px;
+    }
+
+    .menu-item {
+        min-width: 65px;
+    }
+
+    .menu-item i {
+        font-size: 18px;
+    }
+
+    .menu-item p {
+        font-size: 9px;
+
+        padding-left: 9px;
+    }
+
+
+    /* SECTION */
+
+    .project-section {
+        padding: 25px 15px;
+    }
+
+
+    /* SLIDER */
+
+    .slides {
+        height: 260px;
+    }
+
+    .slider-controls {
+        left: 8px;
+        bottom: 8px;
+
+        padding: 7px 10px;
+
+        gap: 9px;
+    }
+
+    .slider-controls button {
+        font-size: 19px;
+    }
+
+    .slider-controls span {
+        font-size: 14px;
+    }
+
+
+    /* CONTENT */
+
+    .content h1 {
+        font-size: 24px;
+    }
+
+    .content h4 {
+        font-size: 14px;
+    }
+
+    .location {
+        font-size: 12px;
+    }
+
+    .price {
+        font-size: 20px;
+    }
+
+    .size {
+        font-size: 12px;
+    }
+
+    .description p {
+        font-size: 12px;
+
+        line-height: 1.55;
+    }
+
+
+    /* BOOK BUTTON */
+
+    .book-btn {
+        right: -63px;
+
+        padding: 10px 22px;
+
+        font-size: 11px;
+    }
+
+
+    /* ENQUIRE BUTTON */
+
+    .enquire-btn {
+        left: 50%;
+
+        bottom: 10px;
+
+        max-width: calc(100% - 90px);
+
+        padding: 10px 15px;
+
+        font-size: 12px;
+
+        border-radius: 16px;
+    }
+
+
+    /* WHATSAPP */
+
+    .whatsapp {
+        width: 48px;
+        height: 48px;
+
+        right: 8px;
+        bottom: 8px;
+
+        border-radius: 10px;
+    }
+
+    .whatsapp i {
+        font-size: 29px;
+    }
+
+    .whatsapp .badge {
+        width: 14px;
+        height: 14px;
+
+        font-size: 9px;
+    }
+
+
+    /* POPUP */
+
+    .popup-overlay {
+        padding: 8px;
+    }
+
+    .popup-box {
+        padding: 25px 14px 20px;
+
+        border-radius: 18px;
+    }
+
+    .popup-box h2 {
+        font-size: 23px;
+
+        padding: 0 20px;
+
+        margin-bottom: 18px;
+    }
+
+    .close-btn {
+        font-size: 26px;
+    }
+
+    .popup-box input[type="text"],
+    .popup-box input[type="tel"],
+    .popup-box input[type="email"] {
+
+        padding: 12px;
+
+        font-size: 15px;
+
+        border-radius: 10px;
+    }
+
+    .popup-box textarea {
+
+        min-height: 95px;
+
+        padding: 12px;
+
+        font-size: 15px;
+
+        border-radius: 10px;
+    }
+
+    .checkbox-area label {
+        font-size: 8px;
+
+        letter-spacing: 0.5px;
+    }
+
+    .popup-box button[type="submit"] {
+        font-size: 17px;
+
+        padding: 12px 20px;
+    }
+
+
+    /* LIGHTBOX */
+
+    #popup img {
+        max-width: 98%;
+        max-height: 78vh;
+    }
+
+    #popup span {
+        top: 8px;
+        right: 10px;
+
+        font-size: 38px;
+    }
+
+
+    /* IFRAMES */
+
+    .masterplan-frame {
+        height: 75vh;
+    }
+
+    .amenities-frame {
+        height: 95vh;
+    }
+
+    .location-frame {
+        height: 100vh;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+   360px
+========================================================= */
+
+@media (max-width: 360px) {
+
+    .logo-text h2 {
+        font-size: 20px;
+    }
+
+    .logo-text span {
+        font-size: 7px;
+        letter-spacing: 2px;
+    }
+
+    .top-menu a {
+        font-size: 9px;
+    }
+
+    .menu {
+        gap: 10px;
+    }
+
+    .menu-item {
+        min-width: 60px;
+    }
+
+    .menu-item p {
+        font-size: 8px;
+    }
+
+    .slides {
+        height: 230px;
+    }
+
+    .content h1 {
+        font-size: 22px;
+    }
+
+    .enquire-btn {
+        max-width: calc(100% - 80px);
+
+        font-size: 11px;
+
+        padding: 9px 12px;
+    }
+
+    .whatsapp {
+        width: 44px;
+        height: 44px;
+    }
+
+    .whatsapp i {
+        font-size: 27px;
+    }
+}
