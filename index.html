@@ -9,76 +9,88 @@
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
 
-<!-- ================= HEADER ================= -->
-
-<header class="hero">
-
-    <div class="overlay"></div>
-
-    <div class="top-bar">
 
 
-    <div class="logo">
+    <!-- ================= HEADER ================= -->
 
-    <img src="./images/saventure-logo original 02.png" alt="Saventure Infratech Logo">
+    <header class="header">
 
-    <div class="logo-text">
-        <h2>SAVENTURE</h2>
-        <span>INFRATECH LLP</span>
-    </div>
-
-    </div>
-
-
-        <div class="top-menu">
-
-            <a href="https://www.saventurebiz.com/portfolio/">Projects</a>
-
-            <a href="tel:+916366611333"><i class="fa-solid fa-phone"></i>+916366611333</a>
-
-            <a href="mailto:connect@saventurebiz.com"><i class="fa-solid fa-envelope"></i>connect@saventurebiz.com</a>
-
-            <a href="#"><i class="fa-solid fa-heart"></i></a>
-
-            <a href="#"><i class="fa-solid fa-bars"></i></a>
-
+        <div class="logo">
+            <span class="logo-mark">SAVENTURE</span>
+            <span class="logo-name">Resort</span>
         </div>
 
-    </div>
+        <nav class="navbar">
 
-</header>
+    <a href="#home">HOME</a>
 
-<!-- ================= MENU ================= -->
+    <a href="#overview">OVERVIEW</a>
 
-<section class="menu">
+    <a href="#masterplan-section">MASTERPLAN</a>
 
-    <a href="#overview" class="menu-item">
-    <i class="fa-regular fa-eye"></i>
-    <p>Overview</p>
-</a>
+    <a href="#amenities-section">AMENITIES</a>
 
-<a href="#masterplan" class="menu-item">
-    <i class="fa-regular fa-map"></i>
-    <p>Master Plan</p>
-</a>
+    <a href="#location-section">LOCATION-CONTACT</a>
 
-<a href="#amenities" class="menu-item">
-    <i class="fa-solid fa-crown"></i>
-    <p>Amenities</p>
-</a>
+</nav>
 
-<a href="#location" class="menu-item">
-    <i class="fa-solid fa-location-dot"></i>
-    <p>Location</p>
-</a>
+        <a href="#enquiry-popup" class="header-button">
+           <label for="enquiry-popup">BOOK A SITE VISIT</label>
+        </a>
 
-</section>
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+
+                <p class="hero-small">
+                    A RETREAT BEYOND ORDINARY
+                </p>
+
+                <h1>
+                    Where nature welcomes you home and
+                    <br>
+                    <span>Becomes Your Luxury.</span>
+                </h1>
+
+                <div class="hero-buttons">
+
+                    <a href="#amenities-section" class="btn btn-outline">
+                        <span>→</span>
+                        EXPLORE FACILITIES
+                    </a>
+
+                    <a href="#enquiry-popup" class="btn btn-orange">
+                        <span>▣</span>
+                        <label for="enquiry-popup">BOOK A SITE VISIT</label>
+                    </a>
+
+                    
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+    
 
 <!-- ================= CONTENT ================= -->
 
@@ -147,18 +159,18 @@
             <div class="description">
 
                 <p><strong>
-                    BITTANGALA WOODS Is An Exclusive, Luxurious Residential And Resort Development Nestled In The Heart Of Bittangala, Coorg. 
+                    RESORT ESTATE Is An Exclusive, Luxurious Residential And Resort Development Nestled In The Heart Of Sakleshpur, Coorg. 
                     This Exceptional Property Is Designed For Those Who Seek A Perfect Blend Of Natural Beauty, Modern Amenities, And Tranquil Living.
                     With Its Prime Location, Unparalleled Views, And Thoughtful Design, 
-                    BIT TANGALA WOODS Stands Out As One Of The Most Prestigious Upcoming Developments In Coorg.
+                    RESORT ESTATE Stands Out As One Of The Most Prestigious Upcoming Developments In Sakleshpur.
                     </strong>
                 </p>
 
                 <p><strong>
                     Location And Natural Beauty |
-                    Set On A Scenic Hill That Runs Alongside The Renowned Coorg Golf Links, BITTANGALA WOODS Offers Residents Breathtaking Views Of The Lush Bittangala Valley. 
+                    Set On A Scenic Hill That Runs Alongside The Renowned Coorg Golf Links, RESORT ESTATE Offers Residents Breathtaking Views Of The Lush Sakleshpur Valley. 
                     The Property's Elevated Position Ensures That Each Residence Enjoys Stunning, Unobstructed Vistas Of The Surrounding Landscape. 
-                    What Makes BITTANGALA WOODS Truly Unique Is Its Commitment To Preserving The Natural Environment-Thousands Of Mature Trees And Vibrant Wildlife, 
+                    What Makes RESORT ESTATE Truly Unique Is Its Commitment To Preserving The Natural Environment-Thousands Of Mature Trees And Vibrant Wildlife, 
                     Including Diverse Bird And Insect Species, Are Carefully Protected, Maintaining The Area's Ecological Balance And Natural Charm.
                     </strong>
                 </p>
@@ -179,7 +191,8 @@
 
 
 <!-- Hidden Checkbox -->
-<input type="checkbox" id="enquiry-popup">
+<!-- <input type="checkbox" id="enquiry-popup"> -->
+<input type="checkbox" id="enquiry-popup" checked>
 
 <!-- Background Overlay -->
 <div class="popup-overlay">
@@ -190,7 +203,7 @@
         <!-- Close Button -->
         <label for="enquiry-popup" class="close-btn">&times;</label>
 
-        <h2>Your Saventure Awaits!</h2>
+        <h2>Your Dream Resort Awaits!</h2>
 
 <form action="https://formsubmit.co/saventurebiz@gmail.com" method="POST">
 
@@ -203,7 +216,7 @@
            value="New Website Enquiry - Sakleshpur Farm Resort">
 
     <!-- Redirect to Thank You Page -->
-<input type="hidden" name="_next" value="https://saventureinfratech234-boop.github.io/specifications/thankyou.html">
+<input type="hidden" name="_next" value="https://saventureinfratech234-boop.github.io/sakleshpur-resort/thankyou.html">
 
     <!-- Name -->
     <input type="text"
@@ -239,7 +252,7 @@
                required>
 
         <label for="agree">
-            I AUTHORISE SAVENTURE INFRA TECH LLP AND ITS REPRESENTATIVES
+            I AUTHORISE RESORT AND ITS REPRESENTATIVES
             TO CONTACT ME THROUGH CALL, SMS, EMAIL OR WHATSAPP.
         </label>
 
@@ -272,8 +285,8 @@
 
 <!-- BOOK BUTTON -->
 
-<a href="#location" class="book-btn">
-    BOOK A SITE VISIT
+<a href="#enquiry-popup" class="book-btn">
+    <label for="enquiry-popup">BOOK A SITE VISIT</label>
 </a>
 
 
@@ -287,36 +300,43 @@
 
 
 
-<!-- EMBED Masterplan DESIGN -->
+<!-- ================= MASTERPLAN ================= -->
 
-<iframe 
-    src="https://saventureinfratech234-boop.github.io/masterplan/"
-    id="masterplan"
-    class="masterplan-frame"
-    title="About Sakleshpur Page">
-</iframe>
+<section class="embedded-section" id="masterplan-section">
 
+    <iframe
+        src="https://saventureinfratech234-boop.github.io/masterplan/"
+        class="masterplan-frame"
+        title="Sakleshpur Masterplan">
+    </iframe>
 
-<!-- EMBED amenties DESIGN -->
-<iframe 
-    src="https://saventureinfratech234-boop.github.io/sakleshpur-amenities/"
-    id="amenities"
-    class="amenities-frame"
-    title="About Sakleshpur Page">
-</iframe>
+</section>
 
 
-<!-- EMBED location DESIGN -->
-<iframe 
-    src="https://saventureinfratech234-boop.github.io/saklespur-location/"
-    id="location"
-    class="location-frame"
-    title="About Sakleshpur Page">
-</iframe>
+<!-- ================= AMENITIES ================= -->
+
+<section class="embedded-section" id="amenities-section">
+
+    <iframe
+        src="https://saventureinfratech234-boop.github.io/sakleshpur-amenities/"
+        class="amenities-frame"
+        title="Sakleshpur Amenities">
+    </iframe>
+
+</section>
 
 
+<!-- ================= LOCATION ================= -->
 
+<section class="embedded-section" id="location-section">
 
+    <iframe
+        src="https://saventureinfratech234-boop.github.io/saklespur-location/"
+        class="location-frame"
+        title="Sakleshpur Location">
+    </iframe>
+
+</section>
 
 </body>
 </html>
