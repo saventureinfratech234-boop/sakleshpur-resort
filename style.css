@@ -14,201 +14,331 @@ html {
 }
 
 body {
-    background: #fff;
-    color: #222;
+    /* background: #fff;
+    color: #222; */
     overflow-x: hidden;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+    background: #f3f1eb;
+    color: #302a26;
 }
 
 
-/* =========================================================
-   HERO
-========================================================= */
+/* =========================
+   HEADER
+========================= */
 
-.hero {
-    height: 200px;
-    background: url("https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&fit=crop&w=1600&q=80");
-    background-size: cover;
-    background-position: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-.overlay {
-    position: absolute;
-    inset: 0;
+.header {
     width: 100%;
-    height: 100%;
-    background: rgba(5, 25, 45, 0.65);
-}
+    height: 72px;
 
-
-/* =========================================================
-   TOP BAR
-========================================================= */
-
-.top-bar {
-    width: 90%;
-    max-width: 1400px;
-    margin: auto;
+    background: #f3f1eb;
 
     display: flex;
-    justify-content: space-between;
     align-items: center;
 
-    position: relative;
-    z-index: 2;
+    padding: 0 11%;
 
-    padding-top: 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    z-index: 100;
 }
 
 
-/* =========================================================
+/* =========================
    LOGO
-========================================================= */
+========================= */
 
 .logo {
+    width: 240px;
+
     display: flex;
+    flex-direction: column;
+
     align-items: center;
-    gap: 15px;
-}
+    justify-content: center;
 
-.logo img {
-    width: 70px;
-    height: auto;
-    display: block;
-}
-
-.logo-text h2 {
-    color: #fff;
-    font-size: 38px;
-    letter-spacing: 2px;
-    font-weight: 700;
-    margin: 0;
     line-height: 1;
-    font-style: italic;
 }
 
-.logo-text span {
-    color: #fff;
-    font-size: 15px;
-    letter-spacing: 6px;
-    display: block;
-    margin-top: 6px;
-    font-style: italic;
+.logo-mark {
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 8px;
+    letter-spacing: 3px;
+
+    color: #b6784e;
+
+    margin-bottom: 2px;
 }
 
+.logo-name {
+    font-family: 'Cormorant Garamond', serif;
 
-/* =========================================================
-   TOP MENU
-========================================================= */
+    font-size: 38px;
+    font-weight: 600;
 
-.top-menu {
-    display: flex;
-    gap: 30px;
-    align-items: center;
-}
+    color: #171513;
 
-.top-menu a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 15px;
-    transition: color 0.3s ease;
-}
-
-.top-menu a:hover {
-    color: #0080b3;
-}
-
-.top-menu i {
-    margin-right: 8px;
+    letter-spacing: -1.5px;
 }
 
 
-/* =========================================================
-   SECTION SCROLL OFFSET
-========================================================= */
+/* =========================
+   NAVIGATION
+========================= */
 
-#overview,
-#masterplan,
-#amenities,
-#location {
-    scroll-margin-top: 120px;
-}
-
-
-/* =========================================================
-   MAIN MENU
-========================================================= */
-
-.menu {
-    width: 100%;
+.navbar {
+    flex: 1;
 
     display: flex;
     justify-content: center;
     align-items: center;
 
-    gap: 70px;
-
-    background: #fff;
-
-    padding: 25px 20px;
-
-    border-bottom: 1px solid #ececec;
-
-    position: sticky;
-    top: 0;
-
-    z-index: 1000;
+    gap: 38px;
 }
 
-.menu-item {
+.navbar a {
+    text-decoration: none;
+
+    color: #332d29;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    letter-spacing: 1px;
+
+    transition: 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #b75e32;
+}
+
+
+/* =========================
+   HEADER BUTTON
+========================= */
+
+.header-button {
+    text-decoration: none;
+
+    color: #302a26;
+
+    border: 1px solid #302a26;
+
+    border-radius: 30px;
+
+    padding: 13px 26px;
+
+    font-size: 13px;
+    font-weight: 500;
+
+    letter-spacing: 1px;
+
+    white-space: nowrap;
+
+    transition: 0.3s ease;
+}
+
+.header-button:hover {
+    background: #302a26;
+    color: #fff;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 100vh;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     text-align: center;
-    color: #333;
 
-    cursor: pointer;
+    overflow: hidden;
 
-    transition: color 0.3s ease;
+    background-image: url("https://www.kumarakomlakeresort.in/assets/images/special-offers/third-night-on-us/third-night-on-us-2026.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* =========================
+   DARK IMAGE OVERLAY
+========================= */
+
+.hero-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            rgba(20, 18, 14, 0.52),
+            rgba(20, 18, 14, 0.58)
+        );
+}
+
+
+/* =========================
+   HERO CONTENT
+========================= */
+
+.hero-content {
+    position: relative;
+
+    z-index: 2;
+
+    width: 100%;
+
+    padding: 100px 20px 40px;
+}
+
+
+/* =========================
+   SMALL TITLE
+========================= */
+
+.hero-small {
+    color: #f4eee6;
+
+    font-size: 12px;
+
+    font-weight: 500;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 18px;
+}
+
+
+/* =========================
+   MAIN TITLE
+========================= */
+
+.hero h1 {
+    font-family: 'Cormorant Garamond', serif;
+
+    color: #ffffff;
+
+    font-size: clamp(48px, 5vw, 76px);
+
+    font-weight: 500;
+
+    line-height: 0.98;
+
+    letter-spacing: -2px;
+
+    text-shadow: 0 3px 15px rgba(0, 0, 0, 0.25);
+}
+
+.hero h1 span {
+    color: #d7a66d;
+
+    font-style: italic;
+
+    font-weight: 500;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.hero-buttons {
+    margin-top: 34px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 18px;
+}
+
+.btn {
+    height: 50px;
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+
+    padding: 0 30px;
 
     text-decoration: none;
 
-    flex-shrink: 0;
-}
+    font-family: 'Montserrat', sans-serif;
 
-.menu-item:hover {
-    color: #ef5a63;
-}
-
-.menu-item i {
-    display: block;
-    font-size: 24px;
-    margin-bottom: 8px;
-}
-
-.menu-item p {
-    text-transform: uppercase;
     font-size: 14px;
-    letter-spacing: 1px;
 
-    border-left: 2px solid #d8d8d8;
+    font-weight: 500;
 
-    padding-left: 28px;
+    letter-spacing: 2px;
+
+    transition: all 0.3s ease;
 }
 
-.menu-item:first-child p {
-    border-left: none;
-    padding-left: 0;
+
+/* Explore button */
+
+.btn-outline {
+    color: #fff;
+
+    border: 1px solid rgba(255,255,255,0.8);
+
+    background: rgba(20,20,20,0.25);
 }
 
-.active {
-    color: #ef5a63;
+.btn-outline:hover {
+    background: #fff;
+
+    color: #302a26;
 }
+
+
+/* Book button */
+
+.btn-orange {
+    color: #fff;
+
+    background: #c45c2e;
+
+    border: 1px solid #c45c2e;
+}
+
+.btn-orange:hover {
+    background: #a94720;
+
+    border-color: #a94720;
+}
+
+
+/* =========================
+   EMPTY TARGET SECTIONS
+========================= */
+
+#heritage,
+#homes,
+#amenities,
+#gallery,
+#masterplan,
+#book-visit {
+    height: 1px;
+}
+
 
 
 /* =========================================================
@@ -566,7 +696,6 @@ hr {
 
 #enquiry-popup:checked ~ .popup-overlay {
     opacity: 1;
-
     visibility: visible;
 }
 
@@ -1009,7 +1138,7 @@ hr {
 
     position: fixed;
 
-    right: -78px;
+    left: -78px;
     top: 45%;
 
     transform: rotate(-90deg);
@@ -1119,38 +1248,71 @@ hr {
 }
 
 
-/* =========================================================
-   IFRAME
-========================================================= */
+/* =========================================
+   EMBEDDED GITHUB PAGES
+========================================= */
+
+.embedded-section {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* =========================================
+   MASTERPLAN
+========================================= */
 
 .masterplan-frame {
+    width: 100%;
+    height: 95vh;
+
     display: block;
 
-    width: 100%;
-
-    height: 100vh;
-
     border: none;
+    margin: 0;
+    padding: 0;
+
+    background: #ffffff;
 }
+
+
+/* =========================================
+   AMENITIES
+========================================= */
 
 .amenities-frame {
+    width: 100%;
+    height: 145vh;
+
     display: block;
 
-    width: 100%;
-
-    height: 144vh;
-
     border: none;
+    margin: 0;
+    padding: 0;
+
+    background: #ffffff;
 }
 
+
+/* =========================================
+   LOCATION
+========================================= */
+
 .location-frame {
-    display: block;
-
     width: 100%;
-
     height: 155vh;
 
+    display: block;
+
     border: none;
+    margin: 0;
+    padding: 0;
+
+    background: #ffffff;
 }
 
 
@@ -1160,10 +1322,6 @@ hr {
 ========================================================= */
 
 @media (max-width: 1200px) {
-
-    .menu {
-        gap: 40px;
-    }
 
     .project-section {
         padding: 50px 5%;
@@ -1197,64 +1355,6 @@ hr {
 ========================================================= */
 
 @media (max-width: 992px) {
-
-    /* HERO */
-
-    .hero {
-        height: 180px;
-    }
-
-    .top-bar {
-        width: 94%;
-        padding-top: 25px;
-    }
-
-    .logo img {
-        width: 60px;
-    }
-
-    .logo-text h2 {
-        font-size: 32px;
-    }
-
-    .logo-text span {
-        font-size: 12px;
-        letter-spacing: 4px;
-    }
-
-    .top-menu {
-        gap: 18px;
-    }
-
-    .top-menu a {
-        font-size: 13px;
-    }
-
-
-    /* MENU */
-
-    .menu {
-        gap: 25px;
-
-        padding: 20px 15px;
-
-        overflow-x: auto;
-
-        justify-content: flex-start;
-    }
-
-    .menu::-webkit-scrollbar {
-        display: none;
-    }
-
-    .menu-item p {
-        font-size: 12px;
-        padding-left: 15px;
-    }
-
-    .menu-item i {
-        font-size: 21px;
-    }
 
 
     /* PROJECT */
@@ -1324,109 +1424,6 @@ hr {
 
     body {
         overflow-x: hidden;
-    }
-
-
-    /* HERO */
-
-    .hero {
-        height: 155px;
-
-        position: relative;
-
-        top: auto;
-    }
-
-    .top-bar {
-        width: 92%;
-
-        flex-direction: column;
-
-        justify-content: center;
-
-        gap: 15px;
-
-        padding-top: 20px;
-    }
-
-    .logo {
-        gap: 10px;
-    }
-
-    .logo img {
-        width: 50px;
-    }
-
-    .logo-text h2 {
-        font-size: 27px;
-        letter-spacing: 1px;
-    }
-
-    .logo-text span {
-        font-size: 9px;
-        letter-spacing: 3px;
-        margin-top: 4px;
-    }
-
-
-    /* TOP MENU */
-
-    .top-menu {
-        width: 100%;
-
-        display: flex;
-
-        justify-content: center;
-
-        gap: 15px;
-
-        flex-wrap: wrap;
-    }
-
-    .top-menu a {
-        font-size: 12px;
-    }
-
-    .top-menu i {
-        margin-right: 4px;
-    }
-
-
-    /* MAIN MENU */
-
-    .menu {
-        position: sticky;
-
-        top: 0;
-
-        width: 100%;
-
-        justify-content: flex-start;
-
-        gap: 20px;
-
-        padding: 15px 12px;
-
-        overflow-x: auto;
-
-        white-space: nowrap;
-    }
-
-    .menu-item {
-        min-width: 75px;
-    }
-
-    .menu-item i {
-        font-size: 20px;
-        margin-bottom: 5px;
-    }
-
-    .menu-item p {
-        font-size: 10px;
-
-        letter-spacing: 0.7px;
-
-        padding-left: 12px;
     }
 
 
@@ -1722,62 +1719,6 @@ hr {
 
 @media (max-width: 480px) {
 
-    /* HERO */
-
-    .hero {
-        height: 140px;
-    }
-
-    .top-bar {
-        padding-top: 16px;
-        gap: 12px;
-    }
-
-    .logo img {
-        width: 44px;
-    }
-
-    .logo-text h2 {
-        font-size: 23px;
-    }
-
-    .logo-text span {
-        font-size: 8px;
-        letter-spacing: 2.5px;
-    }
-
-    .top-menu {
-        gap: 10px;
-    }
-
-    .top-menu a {
-        font-size: 10px;
-    }
-
-
-    /* MENU */
-
-    .menu {
-        gap: 14px;
-
-        padding: 12px 10px;
-    }
-
-    .menu-item {
-        min-width: 65px;
-    }
-
-    .menu-item i {
-        font-size: 18px;
-    }
-
-    .menu-item p {
-        font-size: 9px;
-
-        padding-left: 9px;
-    }
-
-
     /* SECTION */
 
     .project-section {
@@ -1987,31 +1928,6 @@ hr {
 
 @media (max-width: 360px) {
 
-    .logo-text h2 {
-        font-size: 20px;
-    }
-
-    .logo-text span {
-        font-size: 7px;
-        letter-spacing: 2px;
-    }
-
-    .top-menu a {
-        font-size: 9px;
-    }
-
-    .menu {
-        gap: 10px;
-    }
-
-    .menu-item {
-        min-width: 60px;
-    }
-
-    .menu-item p {
-        font-size: 8px;
-    }
-
     .slides {
         height: 230px;
     }
@@ -2035,5 +1951,136 @@ hr {
 
     .whatsapp i {
         font-size: 27px;
+    }
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1100px) {
+
+    .header {
+        padding: 0 5%;
+    }
+
+    .logo {
+        width: 180px;
+    }
+
+    .navbar {
+        gap: 20px;
+    }
+
+    .navbar a {
+        font-size: 12px;
+    }
+
+    .header-button {
+        padding: 11px 18px;
+        font-size: 11px;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 800px) {
+
+    .header {
+        height: auto;
+
+        min-height: 70px;
+
+        padding: 12px 20px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .logo {
+        width: 100%;
+
+        margin-bottom: 10px;
+    }
+
+    .logo-name {
+        font-size: 32px;
+    }
+
+    .navbar {
+        width: 100%;
+
+        order: 2;
+
+        gap: 15px;
+
+        flex-wrap: wrap;
+    }
+
+    .navbar a {
+        font-size: 10px;
+
+        letter-spacing: 0.7px;
+    }
+
+    .header-button {
+        display: none;
+    }
+
+    .hero {
+        min-height: 100vh;
+
+        background-position: center;
+    }
+
+    .hero-content {
+        padding-top: 160px;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+
+        line-height: 0.95;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+
+        gap: 12px;
+    }
+
+    .btn {
+        width: 260px;
+    }
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 480px) {
+
+    .navbar {
+        gap: 10px;
+    }
+
+    .navbar a {
+        font-size: 9px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+
+        letter-spacing: -1px;
+    }
+
+    .hero-small {
+        font-size: 10px;
     }
 }
