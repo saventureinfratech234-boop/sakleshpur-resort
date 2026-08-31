@@ -29,18 +29,13 @@ body {
 .header {
     width: 100%;
     height: 72px;
-
     background: #f3f1eb;
-
     display: flex;
     align-items: center;
-
     padding: 0 11%;
-
     position: fixed;
     top: 0;
     left: 0;
-
     z-index: 100;
 }
 
@@ -51,35 +46,26 @@ body {
 
 .logo {
     width: 240px;
-
     display: flex;
     flex-direction: column;
-
     align-items: center;
     justify-content: center;
-
     line-height: 1;
 }
 
 .logo-mark {
     font-family: 'Montserrat', sans-serif;
-
     font-size: 8px;
     letter-spacing: 3px;
-
     color: #b6784e;
-
     margin-bottom: 2px;
 }
 
 .logo-name {
     font-family: 'Cormorant Garamond', serif;
-
     font-size: 38px;
     font-weight: 600;
-
     color: #171513;
-
     letter-spacing: -1.5px;
 }
 
@@ -90,24 +76,18 @@ body {
 
 .navbar {
     flex: 1;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     gap: 38px;
 }
 
 .navbar a {
     text-decoration: none;
-
     color: #332d29;
-
     font-size: 14px;
     font-weight: 500;
-
     letter-spacing: 1px;
-
     transition: 0.3s ease;
 }
 
@@ -122,22 +102,14 @@ body {
 
 .header-button {
     text-decoration: none;
-
     color: #302a26;
-
     border: 1px solid #302a26;
-
     border-radius: 30px;
-
     padding: 13px 26px;
-
     font-size: 13px;
     font-weight: 500;
-
     letter-spacing: 1px;
-
     white-space: nowrap;
-
     transition: 0.3s ease;
 }
 
@@ -153,19 +125,13 @@ body {
 
 .hero {
     min-height: 100vh;
-
     position: relative;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     text-align: center;
-
     overflow: hidden;
-
-    background-image: url("https://www.kumarakomlakeresort.in/assets/images/special-offers/third-night-on-us/third-night-on-us-2026.jpg");
-
+    background-image: url("images/resort.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -178,9 +144,7 @@ body {
 
 .hero-overlay {
     position: absolute;
-
     inset: 0;
-
     background:
         linear-gradient(
             rgba(20, 18, 14, 0.52),
@@ -195,11 +159,8 @@ body {
 
 .hero-content {
     position: relative;
-
     z-index: 2;
-
     width: 100%;
-
     padding: 100px 20px 40px;
 }
 
@@ -210,13 +171,9 @@ body {
 
 .hero-small {
     color: #f4eee6;
-
     font-size: 12px;
-
     font-weight: 500;
-
     letter-spacing: 2px;
-
     margin-bottom: 18px;
 }
 
@@ -227,25 +184,17 @@ body {
 
 .hero h1 {
     font-family: 'Cormorant Garamond', serif;
-
     color: #ffffff;
-
     font-size: clamp(48px, 5vw, 76px);
-
     font-weight: 500;
-
     line-height: 0.98;
-
     letter-spacing: -2px;
-
     text-shadow: 0 3px 15px rgba(0, 0, 0, 0.25);
 }
 
 .hero h1 span {
     color: #d7a66d;
-
     font-style: italic;
-
     font-weight: 500;
 }
 
@@ -256,38 +205,24 @@ body {
 
 .hero-buttons {
     margin-top: 34px;
-
     display: flex;
-
     justify-content: center;
-
     align-items: center;
-
     gap: 18px;
 }
 
 .btn {
     height: 50px;
-
     display: inline-flex;
-
     align-items: center;
     justify-content: center;
-
     gap: 12px;
-
     padding: 0 30px;
-
     text-decoration: none;
-
     font-family: 'Montserrat', sans-serif;
-
     font-size: 14px;
-
     font-weight: 500;
-
     letter-spacing: 2px;
-
     transition: all 0.3s ease;
 }
 
@@ -296,15 +231,12 @@ body {
 
 .btn-outline {
     color: #fff;
-
     border: 1px solid rgba(255,255,255,0.8);
-
     background: rgba(20,20,20,0.25);
 }
 
 .btn-outline:hover {
     background: #fff;
-
     color: #302a26;
 }
 
@@ -313,15 +245,12 @@ body {
 
 .btn-orange {
     color: #fff;
-
     background: #c45c2e;
-
     border: 1px solid #c45c2e;
 }
 
 .btn-orange:hover {
     background: #a94720;
-
     border-color: #a94720;
 }
 
@@ -359,12 +288,9 @@ body {
     width: 100%;
     max-width: 1500px;
     margin: auto;
-
     display: flex;
-
     justify-content: space-between;
     align-items: flex-start;
-
     gap: 60px;
 }
 
@@ -375,33 +301,24 @@ body {
 
 .slider {
     width: 58%;
-
     position: relative;
-
     overflow: hidden;
-
     flex-shrink: 0;
 }
 
 .slides {
     position: relative;
-
     width: 100%;
     height: 620px;
-
     overflow: hidden;
 }
 
 .slide {
     position: absolute;
-
     width: 100%;
     height: 100%;
-
     object-fit: cover;
-
     opacity: 0;
-
     transition: opacity 0.5s ease;
 }
 
@@ -416,36 +333,23 @@ body {
 
 .slider-controls {
     position: absolute;
-
     left: 20px;
     bottom: 20px;
-
     background: #ff5d5d;
-
     color: #fff;
-
     display: flex;
-
     align-items: center;
-
     gap: 18px;
-
     padding: 15px 22px;
-
     z-index: 5;
 }
 
 .slider-controls button {
     border: none;
-
     background: none;
-
     color: #fff;
-
     font-size: 28px;
-
     cursor: pointer;
-
     line-height: 1;
 }
 
@@ -465,77 +369,55 @@ body {
 
 .content h1 {
     font-size: 40px;
-
     color: #ff5d5d;
-
     margin-bottom: 30px;
-
     line-height: 1.2;
 }
 
 .content h4 {
     font-size: 18px;
-
     margin-bottom: 8px;
-
     text-transform: uppercase;
-
     font-weight: 500;
-
     line-height: 1.4;
 }
 
 .location {
     font-size: 14px;
-
     margin-bottom: 30px;
-
     line-height: 1.5;
 }
 
 .price {
     color: #ff5d5d;
-
     font-size: 26px;
-
     margin-bottom: 12px;
-
     font-weight: 300;
 }
 
 .size {
     font-size: 14px;
-
     color: #666;
-
     font-weight: 600;
-
     margin-bottom: 25px;
 }
 
 hr {
     border: none;
-
     height: 1px;
-
     background: #cfcfcf;
-
     margin-bottom: 20px;
 }
 
 .description {
     display: flex;
-
     flex-direction: column;
-
     gap: 25px;
 }
 
 .description p {
     font-size: 15px;
-
     line-height: 1.6;
-
     color: #333;
 }
 
@@ -550,48 +432,27 @@ hr {
 
 .enquire-btn {
     position: fixed;
-
     left: 50%;
     bottom: 20px;
-
     transform: translateX(-50%);
-
     display: block;
-
     width: auto;
-
     max-width: 90%;
-
     padding: 15px 35px;
-
     background: #5b2d17;
-
     color: #fff;
-
     border-radius: 22px;
-
     cursor: pointer;
-
     z-index: 99999;
-
     font-size: 18px;
-
     font-weight: 600;
-
     letter-spacing: 1px;
-
     line-height: 1.2;
-
     text-align: center;
-
     text-transform: uppercase;
-
     white-space: nowrap;
-
     overflow: hidden;
-
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
-
     transition:
         background 0.3s ease,
         box-shadow 0.3s ease,
@@ -605,15 +466,11 @@ hr {
 
 .enquire-btn::before {
     content: "";
-
     position: absolute;
-
     top: 0;
     left: -120%;
-
     width: 60%;
     height: 100%;
-
     background: linear-gradient(
         120deg,
         transparent,
@@ -622,15 +479,12 @@ hr {
     );
 
     transform: skewX(-25deg);
-
     animation: shine 3s infinite;
 }
 
 .enquire-btn:hover {
     background: #744125;
-
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
-
     transform: translateX(-50%) translateY(-3px);
 }
 
@@ -661,29 +515,18 @@ hr {
 
 .popup-overlay {
     position: fixed;
-
     inset: 0;
-
     width: 100%;
     height: 100%;
-
     padding: 20px;
-
     display: flex;
-
     align-items: center;
     justify-content: center;
-
     background: rgba(0, 0, 0, 0.65);
-
     opacity: 0;
-
     visibility: hidden;
-
     overflow-y: auto;
-
     z-index: 9999;
-
     transition:
         opacity 0.4s ease,
         visibility 0.4s ease;
@@ -706,23 +549,14 @@ hr {
 
 .popup-box {
     position: relative;
-
     width: 650px;
-
     max-width: 100%;
-
     max-height: 94vh;
-
     overflow-y: auto;
-
     padding: 35px;
-
     background: #fff;
-
     border-radius: 30px;
-
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
-
     animation: popup 0.35s ease;
 }
 
@@ -751,30 +585,19 @@ hr {
 
 .close-btn {
     position: absolute;
-
     top: 12px;
     right: 18px;
-
     width: 40px;
     height: 40px;
-
     display: flex;
-
     align-items: center;
     justify-content: center;
-
     color: #222;
-
     font-size: 34px;
-
     line-height: 1;
-
     cursor: pointer;
-
     border-radius: 50%;
-
     z-index: 10;
-
     transition:
         background 0.3s ease,
         color 0.3s ease;
@@ -782,7 +605,6 @@ hr {
 
 .close-btn:hover {
     background: #f2f2f2;
-
     color: #603728;
 }
 
@@ -793,17 +615,11 @@ hr {
 
 .popup-box h2 {
     margin-bottom: 30px;
-
     padding: 0 35px;
-
     text-align: center;
-
     color: #603728;
-
     font-size: 38px;
-
     font-weight: 500;
-
     line-height: 1.25;
 }
 
@@ -826,31 +642,18 @@ hr {
 .popup-box input[type="email"] {
 
     display: block;
-
     width: 100%;
-
     height: auto;
-
     padding: 16px;
-
     margin-bottom: 18px;
-
     border: 1px solid #b8b8b8;
-
     border-radius: 15px;
-
     outline: none;
-
     background: #fff;
-
     color: #222;
-
     font-family: inherit;
-
     font-size: 18px;
-
     line-height: 1.4;
-
     transition:
         border-color 0.3s ease,
         box-shadow 0.3s ease;
@@ -864,33 +667,19 @@ hr {
 .popup-box textarea {
 
     display: block;
-
     width: 100%;
-
     min-height: 130px;
-
     padding: 16px;
-
     margin-bottom: 18px;
-
     border: 1px solid #b8b8b8;
-
     border-radius: 15px;
-
     outline: none;
-
     resize: vertical;
-
     background: #fff;
-
     color: #222;
-
     font-family: inherit;
-
     font-size: 18px;
-
     line-height: 1.5;
-
     transition:
         border-color 0.3s ease,
         box-shadow 0.3s ease;
@@ -907,7 +696,6 @@ hr {
 .popup-box textarea:focus {
 
     border-color: #603728;
-
     box-shadow: 0 0 8px rgba(96, 55, 40, 0.2);
 }
 
@@ -919,7 +707,6 @@ hr {
 .popup-box input::placeholder,
 .popup-box textarea::placeholder {
     color: #777;
-
     opacity: 1;
 }
 
@@ -931,13 +718,9 @@ hr {
 .checkbox-area {
 
     display: flex;
-
     align-items: flex-start;
-
     gap: 10px;
-
     width: 100%;
-
     margin: 10px 0 25px;
 }
 
@@ -949,16 +732,11 @@ hr {
 .checkbox-area input[type="checkbox"] {
 
     flex: 0 0 auto;
-
     width: 18px;
     height: 18px;
-
     margin: 4px 0 0;
-
     padding: 0;
-
     cursor: pointer;
-
     accent-color: #603728;
 }
 
@@ -1137,28 +915,17 @@ hr {
 .book-btn {
 
     position: fixed;
-
     left: -78px;
     top: 45%;
-
     transform: rotate(-90deg);
-
     background: #ef5a63;
-
     color: #fff;
-
     padding: 14px 35px;
-
     letter-spacing: 1px;
-
     font-weight: 600;
-
     cursor: pointer;
-
     text-decoration: none;
-
     z-index: 9998;
-
     transition: background 0.3s ease;
 }
 
@@ -1174,26 +941,17 @@ hr {
 .whatsapp {
 
     position: fixed;
-
     bottom: 20px;
     right: 20px;
-
     width: 65px;
     height: 65px;
-
     background: #fff;
-
     border-radius: 15px;
-
     display: flex;
-
     align-items: center;
     justify-content: center;
-
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-
     text-decoration: none;
-
     z-index: 9997;
 }
 
@@ -1205,7 +963,6 @@ hr {
 .whatsapp i {
 
     font-size: 42px;
-
     color: #25d366;
 }
 
@@ -1217,23 +974,15 @@ hr {
 .whatsapp .badge {
 
     position: absolute;
-
     top: 5px;
     left: 5px;
-
     background: red;
-
     color: #fff;
-
     font-size: 12px;
-
     width: 18px;
     height: 18px;
-
     border-radius: 50%;
-
     display: flex;
-
     align-items: center;
     justify-content: center;
 }
@@ -1269,13 +1018,10 @@ hr {
 .masterplan-frame {
     width: 100%;
     height: 95vh;
-
     display: block;
-
     border: none;
     margin: 0;
     padding: 0;
-
     background: #ffffff;
 }
 
@@ -1287,13 +1033,10 @@ hr {
 .amenities-frame {
     width: 100%;
     height: 145vh;
-
     display: block;
-
     border: none;
     margin: 0;
     padding: 0;
-
     background: #ffffff;
 }
 
@@ -1305,26 +1048,52 @@ hr {
 .location-frame {
     width: 100%;
     height: 155vh;
-
     display: block;
-
     border: none;
     margin: 0;
     padding: 0;
-
     background: #ffffff;
 }
 
 
+
 /* =========================================================
-   LARGE TABLET / SMALL LAPTOP
-   1200px
+   RESPONSIVE WEB DESIGN
+========================================================= */
+
+
+/* =========================================================
+   LARGE TABLETS / SMALL LAPTOPS
+   1200px and below
 ========================================================= */
 
 @media (max-width: 1200px) {
 
+    /* HEADER */
+    .header {
+        padding: 0 5%;
+    }
+
+    .logo {
+        width: 210px;
+    }
+
+    .navbar {
+        gap: 25px;
+    }
+
+    .navbar a {
+        font-size: 13px;
+    }
+
+    .header-button {
+        padding: 11px 20px;
+        font-size: 12px;
+    }
+
+    /* PROJECT SECTION */
     .project-section {
-        padding: 50px 5%;
+        padding: 60px 5%;
     }
 
     .container {
@@ -1332,7 +1101,7 @@ hr {
     }
 
     .slider {
-        width: 56%;
+        width: 57%;
     }
 
     .content {
@@ -1343,35 +1112,281 @@ hr {
         height: 550px;
     }
 
-    .content h1 {
-        font-size: 36px;
+    /* HERO */
+    .hero h1 {
+        font-size: clamp(45px, 6vw, 68px);
+    }
+
+    /* EMBEDDED SECTIONS */
+    .masterplan-frame {
+        height: 90vh;
+    }
+
+    .amenities-frame {
+        height: 135vh;
+    }
+
+    .location-frame {
+        height: 145vh;
     }
 }
 
 
 /* =========================================================
-   TABLET
-   992px
+   TABLETS
+   992px and below
 ========================================================= */
 
 @media (max-width: 992px) {
 
+    /* HEADER */
+    .header {
+        height: 70px;
+        padding: 0 4%;
+    }
 
-    /* PROJECT */
+    .logo {
+        width: 190px;
+    }
 
+    .logo-name {
+        font-size: 32px;
+    }
+
+    .logo-mark {
+        font-size: 7px;
+        letter-spacing: 2.5px;
+    }
+
+    .navbar {
+        gap: 18px;
+    }
+
+    .navbar a {
+        font-size: 12px;
+        letter-spacing: 0.5px;
+    }
+
+    .header-button {
+        padding: 10px 16px;
+        font-size: 11px;
+    }
+
+
+    /* HERO */
+    .hero {
+        min-height: 100svh;
+        background-position: center;
+    }
+
+    .hero-content {
+        padding: 100px 25px 50px;
+    }
+
+    .hero-small {
+        font-size: 11px;
+        letter-spacing: 1.5px;
+    }
+
+    .hero h1 {
+        font-size: clamp(42px, 7vw, 62px);
+    }
+
+    .hero-buttons {
+        gap: 12px;
+    }
+
+    .btn {
+        height: 48px;
+        padding: 0 24px;
+        font-size: 12px;
+    }
+
+
+    /* PROJECT SECTION */
     .project-section {
-        padding: 45px 5%;
+        padding: 50px 4%;
     }
 
     .container {
         flex-direction: column;
-        gap: 40px;
+        gap: 45px;
     }
 
-    .slider {
+    .slider,
+    .content {
         width: 100%;
     }
 
+    .slides {
+        height: 600px;
+    }
+
+    .content {
+        padding: 0 5%;
+    }
+
+    .content h1 {
+        font-size: 36px;
+    }
+
+    .content h4 {
+        font-size: 17px;
+    }
+
+
+    /* POPUP */
+    .popup-box {
+        width: 600px;
+        padding: 30px;
+    }
+
+    .popup-box h2 {
+        font-size: 34px;
+        margin-bottom: 25px;
+    }
+
+
+    /* BOOK BUTTON */
+    .book-btn {
+        left: -72px;
+        padding: 12px 30px;
+        font-size: 13px;
+    }
+
+
+    /* WHATSAPP */
+    .whatsapp {
+        width: 58px;
+        height: 58px;
+        right: 15px;
+        bottom: 15px;
+    }
+
+    .whatsapp i {
+        font-size: 36px;
+    }
+
+
+    /* IFRAME SECTIONS */
+    .masterplan-frame {
+        height: 85vh;
+    }
+
+    .amenities-frame {
+        height: 130vh;
+    }
+
+    .location-frame {
+        height: 140vh;
+    }
+}
+
+
+/* =========================================================
+   MOBILE LANDSCAPE / LARGE PHONES
+   768px and below
+========================================================= */
+
+@media (max-width: 768px) {
+
+    /* HEADER */
+    .header {
+        height: auto;
+        min-height: 70px;
+        padding: 10px 20px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .logo {
+        width: auto;
+        align-items: flex-start;
+    }
+
+    .logo-name {
+        font-size: 30px;
+    }
+
+    .logo-mark {
+        font-size: 6px;
+        letter-spacing: 2px;
+    }
+
+    /*
+       Navigation wraps below the logo.
+       This avoids horizontal overflow.
+    */
+    .navbar {
+        order: 3;
+        width: 100%;
+        flex-basis: 100%;
+        justify-content: center;
+        gap: 20px;
+        padding: 10px 0 5px;
+        overflow-x: auto;
+    }
+
+    .navbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    .navbar a {
+        flex-shrink: 0;
+        font-size: 12px;
+    }
+
+    .header-button {
+        padding: 9px 16px;
+        font-size: 11px;
+    }
+
+
+    /* HERO */
+    .hero {
+        min-height: 100svh;
+        margin-top: 0;
+    }
+
+    .hero-content {
+        padding: 150px 20px 60px;
+    }
+
+    .hero-small {
+        font-size: 10px;
+        margin-bottom: 14px;
+    }
+
+    .hero h1 {
+        font-size: clamp(40px, 10vw, 58px);
+        letter-spacing: -1px;
+        line-height: 1;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 28px;
+    }
+
+    .btn {
+        width: 220px;
+        height: 48px;
+        font-size: 12px;
+    }
+
+
+    /* PROJECT SECTION */
+    .project-section {
+        padding: 45px 20px;
+    }
+
+    .container {
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .slider,
     .content {
         width: 100%;
     }
@@ -1380,33 +1395,436 @@ hr {
         height: 500px;
     }
 
+    .content {
+        padding: 0;
+    }
+
     .content h1 {
-        font-size: 38px;
+        font-size: 32px;
+        margin-bottom: 22px;
+    }
+
+    .content h4 {
+        font-size: 16px;
+    }
+
+    .location {
+        font-size: 13px;
+        margin-bottom: 25px;
+    }
+
+    .price {
+        font-size: 24px;
+    }
+
+    .size {
+        font-size: 13px;
+    }
+
+    .description {
+        gap: 20px;
     }
 
     .description p {
-        font-size: 15px;
-        line-height: 1.6;
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+
+    /* SLIDER CONTROLS */
+    .slider-controls {
+        left: 12px;
+        bottom: 12px;
+        padding: 10px 15px;
+        gap: 12px;
+    }
+
+    .slider-controls button {
+        font-size: 24px;
+    }
+
+    .slider-controls span {
+        font-size: 18px;
+    }
+
+
+    /* ENQUIRE BUTTON */
+    .enquire-btn {
+        bottom: 15px;
+        max-width: 85%;
+        padding: 13px 25px;
+        font-size: 14px;
+        border-radius: 20px;
+    }
+
+
+    /* POPUP */
+    .popup-overlay {
+        padding: 15px;
+    }
+
+    .popup-box {
+        width: 100%;
+        max-height: 92vh;
+        padding: 25px 20px;
+        border-radius: 22px;
+    }
+
+    .popup-box h2 {
+        padding: 0 25px;
+        font-size: 30px;
+        margin-bottom: 25px;
+    }
+
+    .close-btn {
+        top: 8px;
+        right: 10px;
+        width: 36px;
+        height: 36px;
+        font-size: 30px;
+    }
+
+    .popup-box input[type="text"],
+    .popup-box input[type="tel"],
+    .popup-box input[type="email"] {
+        padding: 14px;
+        margin-bottom: 15px;
+        font-size: 16px;
+        border-radius: 12px;
+    }
+
+    .popup-box textarea {
+        min-height: 110px;
+        padding: 14px;
+        margin-bottom: 15px;
+        font-size: 16px;
+        border-radius: 12px;
+    }
+
+    .checkbox-area {
+        gap: 8px;
+        margin: 8px 0 20px;
+    }
+
+    .checkbox-area label {
+        font-size: 9px;
+        line-height: 1.7;
+        letter-spacing: 0.7px;
+    }
+
+    .popup-box button[type="submit"] {
+        padding: 13px 40px;
+        font-size: 20px;
+        border-radius: 12px;
+    }
+
+
+    /* IMAGE LIGHTBOX */
+    #popup {
+        padding: 10px;
+    }
+
+    #popup img {
+        max-width: 96%;
+        max-height: 85vh;
+    }
+
+    #popup span {
+        top: 15px;
+        right: 20px;
+        font-size: 45px;
     }
 
 
     /* BOOK BUTTON */
-
     .book-btn {
-        right: -72px;
-        top: 42%;
-        padding: 13px 30px;
+        left: -65px;
+        top: 43%;
+        padding: 11px 26px;
+        font-size: 12px;
     }
 
 
-    /* IFRAME */
+    /* WHATSAPP */
+    .whatsapp {
+        width: 55px;
+        height: 55px;
+        right: 12px;
+        bottom: 12px;
+        border-radius: 13px;
+    }
 
+    .whatsapp i {
+        font-size: 34px;
+    }
+
+    .whatsapp .badge {
+        top: 3px;
+        left: 3px;
+        width: 17px;
+        height: 17px;
+        font-size: 10px;
+    }
+
+
+    /* EMBEDDED SECTIONS */
     .masterplan-frame {
-        height: 100vh;
+        height: 145vh;
     }
 
     .amenities-frame {
         height: 125vh;
+    }
+
+    .location-frame {
+        height: 135vh;
+    }
+}
+
+
+/* =========================================================
+   MOBILE PHONES
+   576px and below
+========================================================= */
+
+@media (max-width: 576px) {
+
+    /* HEADER */
+    .header {
+        padding: 9px 15px;
+        min-height: 65px;
+    }
+
+    .logo-name {
+        font-size: 27px;
+    }
+
+    .logo-mark {
+        font-size: 5.5px;
+        letter-spacing: 1.8px;
+    }
+
+    .header-button {
+        padding: 8px 13px;
+        font-size: 10px;
+        letter-spacing: 0.5px;
+    }
+
+    .navbar {
+        gap: 17px;
+        justify-content: flex-start;
+        padding-top: 9px;
+    }
+
+    .navbar a {
+        font-size: 11px;
+    }
+
+
+    /* HERO */
+    .hero-content {
+        padding: 145px 15px 50px;
+    }
+
+    .hero-small {
+        font-size: 9px;
+        letter-spacing: 1.2px;
+        margin-bottom: 12px;
+    }
+
+    .hero h1 {
+        font-size: clamp(36px, 11vw, 50px);
+        line-height: 1.02;
+    }
+
+    .hero-buttons {
+        margin-top: 25px;
+    }
+
+    .btn {
+        width: 200px;
+        height: 46px;
+        padding: 0 20px;
+        font-size: 11px;
+    }
+
+
+    /* PROJECT */
+    .project-section {
+        padding: 35px 15px;
+    }
+
+    .slides {
+        height: 400px;
+    }
+
+    .content h1 {
+        font-size: 29px;
+    }
+
+    .content h4 {
+        font-size: 15px;
+    }
+
+    .location {
+        font-size: 12px;
+    }
+
+    .price {
+        font-size: 22px;
+    }
+
+    .size {
+        font-size: 12px;
+    }
+
+    .description p {
+        font-size: 13px;
+        line-height: 1.65;
+    }
+
+
+    /* SLIDER CONTROLS */
+    .slider-controls {
+        left: 10px;
+        bottom: 10px;
+        padding: 8px 12px;
+        gap: 10px;
+    }
+
+    .slider-controls button {
+        font-size: 21px;
+    }
+
+    .slider-controls span {
+        font-size: 16px;
+    }
+
+
+    /* ENQUIRE BUTTON */
+    .enquire-btn {
+        bottom: 10px;
+        padding: 12px 20px;
+        font-size: 12px;
+        max-width: 82%;
+        border-radius: 18px;
+    }
+
+
+    /* POPUP */
+    .popup-overlay {
+        padding: 10px;
+    }
+
+    .popup-box {
+        max-height: 94vh;
+        padding: 22px 15px;
+        border-radius: 18px;
+    }
+
+    .popup-box h2 {
+        padding: 0 20px;
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+
+    .close-btn {
+        top: 5px;
+        right: 7px;
+        font-size: 28px;
+    }
+
+    .popup-box input[type="text"],
+    .popup-box input[type="tel"],
+    .popup-box input[type="email"] {
+        padding: 12px;
+        font-size: 15px;
+        border-radius: 10px;
+        margin-bottom: 12px;
+    }
+
+    .popup-box textarea {
+        padding: 12px;
+        min-height: 100px;
+        font-size: 15px;
+        border-radius: 10px;
+        margin-bottom: 12px;
+    }
+
+    .checkbox-area {
+        margin: 7px 0 18px;
+    }
+
+    .checkbox-area input[type="checkbox"] {
+        width: 16px;
+        height: 16px;
+    }
+
+    .checkbox-area label {
+        font-size: 8px;
+        line-height: 1.6;
+        letter-spacing: 0.5px;
+    }
+
+    .popup-box button[type="submit"] {
+        width: 100%;
+        padding: 13px 20px;
+        font-size: 18px;
+        border-radius: 10px;
+    }
+
+
+    /* LIGHTBOX */
+    #popup img {
+        max-width: 98%;
+        max-height: 82vh;
+    }
+
+    #popup span {
+        top: 10px;
+        right: 15px;
+        font-size: 40px;
+    }
+
+
+    /* BOOK BUTTON */
+    .book-btn {
+        left: -59px;
+        top: 42%;
+        padding: 9px 22px;
+        font-size: 10px;
+    }
+
+
+    /* WHATSAPP */
+    .whatsapp {
+        width: 50px;
+        height: 50px;
+        right: 10px;
+        bottom: 10px;
+        border-radius: 12px;
+    }
+
+    .whatsapp i {
+        font-size: 30px;
+    }
+
+    .whatsapp .badge {
+        width: 15px;
+        height: 15px;
+        font-size: 9px;
+        top: 2px;
+        left: 2px;
+    }
+
+
+    /* IFRAMES */
+    .masterplan-frame {
+        height: 149vh;
+    }
+
+    .amenities-frame {
+        height: 123vh;
     }
 
     .location-frame {
@@ -1416,671 +1834,229 @@ hr {
 
 
 /* =========================================================
-   MOBILE
-   768px
+   SMALL MOBILE PHONES
+   400px and below
 ========================================================= */
 
-@media (max-width: 768px) {
+@media (max-width: 400px) {
 
-    body {
-        overflow-x: hidden;
+    /* HEADER */
+    .header {
+        padding: 8px 12px;
     }
 
-
-    /* SECTION */
-
-    .project-section {
-        padding: 30px 20px;
+    .logo-name {
+        font-size: 24px;
     }
 
-    .container {
-        width: 100%;
-
-        flex-direction: column;
-
-        gap: 30px;
+    .logo-mark {
+        font-size: 5px;
+        letter-spacing: 1.5px;
     }
 
-
-    /* SLIDER */
-
-    .slider {
-        width: 100%;
+    .header-button {
+        padding: 7px 11px;
+        font-size: 9px;
     }
 
-    .slides {
-        width: 100%;
-        height: 330px;
+    .navbar {
+        gap: 14px;
     }
 
-    .slide {
-        width: 100%;
-        height: 100%;
-    }
-
-
-    /* SLIDER CONTROLS */
-
-    .slider-controls {
-        left: 12px;
-        bottom: 12px;
-
-        gap: 12px;
-
-        padding: 9px 14px;
-    }
-
-    .slider-controls button {
-        font-size: 22px;
-    }
-
-    .slider-controls span {
-        font-size: 17px;
-    }
-
-
-    /* CONTENT */
-
-    .content {
-        width: 100%;
-    }
-
-    .content h1 {
-        font-size: 28px;
-
-        margin-bottom: 20px;
-    }
-
-    .content h4 {
-        font-size: 16px;
-    }
-
-    .location {
-        font-size: 13px;
-
-        margin-bottom: 20px;
-    }
-
-    .price {
-        font-size: 22px;
-    }
-
-    .size {
-        font-size: 13px;
-
-        margin-bottom: 20px;
-    }
-
-    .description {
-        gap: 18px;
-    }
-
-    .description p {
-        font-size: 13px;
-
-        line-height: 1.6;
-    }
-
-
-    /* BOOK BUTTON */
-
-    .book-btn {
-        right: -67px;
-
-        top: 40%;
-
-        padding: 11px 25px;
-
-        font-size: 13px;
-    }
-
-
-    /* ENQUIRE BUTTON */
-
-    .enquire-btn {
-        bottom: 15px;
-
-        max-width: calc(100% - 100px);
-
-        padding: 12px 22px;
-
-        font-size: 14px;
-
-        border-radius: 18px;
-    }
-
-
-    /* WHATSAPP */
-
-    .whatsapp {
-        width: 52px;
-        height: 52px;
-
-        right: 12px;
-        bottom: 12px;
-
-        border-radius: 12px;
-    }
-
-    .whatsapp i {
-        font-size: 32px;
-    }
-
-    .whatsapp .badge {
-        width: 16px;
-        height: 16px;
-
-        top: 3px;
-        left: 3px;
-
+    .navbar a {
         font-size: 10px;
     }
 
 
-    /* POPUP */
-
-    .popup-overlay {
-        padding: 12px;
+    /* HERO */
+    .hero-content {
+        padding: 140px 12px 40px;
     }
 
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .hero-small {
+        font-size: 8px;
+    }
+
+    .btn {
+        width: 185px;
+        height: 44px;
+        font-size: 10px;
+    }
+
+
+    /* PROJECT */
+    .project-section {
+        padding: 30px 12px;
+    }
+
+    .slides {
+        height: 350px;
+    }
+
+    .content h1 {
+        font-size: 26px;
+    }
+
+    .content h4 {
+        font-size: 14px;
+    }
+
+    .description p {
+        font-size: 12px;
+    }
+
+
+    /* ENQUIRE */
+    .enquire-btn {
+        max-width: 78%;
+        padding: 11px 17px;
+        font-size: 11px;
+    }
+
+
+    /* POPUP */
     .popup-box {
-        width: 100%;
-
-        max-height: 94vh;
-
-        padding: 25px 18px;
-
-        border-radius: 22px;
+        padding: 20px 12px;
     }
 
     .popup-box h2 {
-        font-size: 27px;
-
-        padding: 0 25px;
-
-        margin-bottom: 22px;
+        font-size: 22px;
+        padding: 0 15px;
     }
-
-    .close-btn {
-        top: 8px;
-        right: 10px;
-
-        width: 35px;
-        height: 35px;
-
-        font-size: 29px;
-    }
-
-
-    /* INPUTS */
 
     .popup-box input[type="text"],
     .popup-box input[type="tel"],
-    .popup-box input[type="email"] {
-
-        padding: 13px;
-
-        margin-bottom: 14px;
-
-        border-radius: 12px;
-
-        font-size: 16px;
-    }
-
+    .popup-box input[type="email"],
     .popup-box textarea {
-
-        min-height: 110px;
-
-        padding: 13px;
-
-        margin-bottom: 14px;
-
-        border-radius: 12px;
-
-        font-size: 16px;
-    }
-
-
-    /* CHECKBOX */
-
-    .checkbox-area {
-        gap: 8px;
-
-        margin: 8px 0 20px;
-    }
-
-    .checkbox-area input[type="checkbox"] {
-        width: 17px;
-        height: 17px;
+        font-size: 14px;
     }
 
     .checkbox-area label {
-        font-size: 9px;
-
-        line-height: 1.6;
-
-        letter-spacing: 0.7px;
+        font-size: 7.5px;
     }
 
 
-    /* SUBMIT */
-
-    .popup-box button[type="submit"] {
-
-        width: 100%;
-
-        padding: 13px 25px;
-
-        font-size: 19px;
-
-        border-radius: 12px;
+    /* WHATSAPP */
+    .whatsapp {
+        width: 46px;
+        height: 46px;
     }
 
-
-    /* LIGHTBOX */
-
-    #popup {
-        padding: 10px;
-    }
-
-    #popup img {
-        max-width: 96%;
-        max-height: 82vh;
-    }
-
-    #popup span {
-        top: 10px;
-        right: 15px;
-
-        font-size: 42px;
+    .whatsapp i {
+        font-size: 27px;
     }
 
 
     /* IFRAMES */
-
     .masterplan-frame {
-        height: 80vh;
+        height: 148vh;
     }
 
     .amenities-frame {
-        height: 105vh;
+        height: 115vh;
     }
 
     .location-frame {
-        height: 110vh;
+        height: 125vh;
     }
 }
 
 
 /* =========================================================
-   SMALL MOBILE
-   480px
+   VERY SMALL PHONES
+   360px and below
 ========================================================= */
 
-@media (max-width: 480px) {
+@media (max-width: 360px) {
 
-    /* SECTION */
-
-    .project-section {
-        padding: 25px 15px;
+    .logo-name {
+        font-size: 22px;
     }
 
+    .header-button {
+        padding: 6px 9px;
+        font-size: 8px;
+    }
 
-    /* SLIDER */
+    .navbar {
+        gap: 12px;
+    }
+
+    .navbar a {
+        font-size: 9px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero-small {
+        font-size: 7px;
+    }
 
     .slides {
-        height: 260px;
+        height: 320px;
     }
-
-    .slider-controls {
-        left: 8px;
-        bottom: 8px;
-
-        padding: 7px 10px;
-
-        gap: 9px;
-    }
-
-    .slider-controls button {
-        font-size: 19px;
-    }
-
-    .slider-controls span {
-        font-size: 14px;
-    }
-
-
-    /* CONTENT */
 
     .content h1 {
         font-size: 24px;
     }
 
-    .content h4 {
-        font-size: 14px;
+    .enquire-btn {
+        font-size: 10px;
+        padding: 10px 15px;
     }
-
-    .location {
-        font-size: 12px;
-    }
-
-    .price {
-        font-size: 20px;
-    }
-
-    .size {
-        font-size: 12px;
-    }
-
-    .description p {
-        font-size: 12px;
-
-        line-height: 1.55;
-    }
-
-
-    /* BOOK BUTTON */
 
     .book-btn {
-        right: -63px;
-
-        padding: 10px 22px;
-
-        font-size: 11px;
-    }
-
-
-    /* ENQUIRE BUTTON */
-
-    .enquire-btn {
-        left: 50%;
-
-        bottom: 10px;
-
-        max-width: calc(100% - 90px);
-
-        padding: 10px 15px;
-
-        font-size: 12px;
-
-        border-radius: 16px;
-    }
-
-
-    /* WHATSAPP */
-
-    .whatsapp {
-        width: 48px;
-        height: 48px;
-
-        right: 8px;
-        bottom: 8px;
-
-        border-radius: 10px;
-    }
-
-    .whatsapp i {
-        font-size: 29px;
-    }
-
-    .whatsapp .badge {
-        width: 14px;
-        height: 14px;
-
+        left: -55px;
         font-size: 9px;
     }
+}
 
 
-    /* POPUP */
+/* TABLET */
 
-    .popup-overlay {
-        padding: 8px;
-    }
-
-    .popup-box {
-        padding: 25px 14px 20px;
-
-        border-radius: 18px;
-    }
-
-    .popup-box h2 {
-        font-size: 23px;
-
-        padding: 0 20px;
-
-        margin-bottom: 18px;
-    }
-
-    .close-btn {
-        font-size: 26px;
-    }
-
-    .popup-box input[type="text"],
-    .popup-box input[type="tel"],
-    .popup-box input[type="email"] {
-
-        padding: 12px;
-
-        font-size: 15px;
-
-        border-radius: 10px;
-    }
-
-    .popup-box textarea {
-
-        min-height: 95px;
-
-        padding: 12px;
-
-        font-size: 15px;
-
-        border-radius: 10px;
-    }
-
-    .checkbox-area label {
-        font-size: 8px;
-
-        letter-spacing: 0.5px;
-    }
-
-    .popup-box button[type="submit"] {
-        font-size: 17px;
-
-        padding: 12px 20px;
-    }
-
-
-    /* LIGHTBOX */
-
-    #popup img {
-        max-width: 98%;
-        max-height: 78vh;
-    }
-
-    #popup span {
-        top: 8px;
-        right: 10px;
-
-        font-size: 38px;
-    }
-
-
-    /* IFRAMES */
-
-    .masterplan-frame {
-        height: 75vh;
-    }
-
-    .amenities-frame {
-        height: 95vh;
-    }
+@media (max-width: 992px) {
 
     .location-frame {
-        height: 100vh;
+        height: 1900px;
     }
+
 }
 
 
-/* =========================================================
-   VERY SMALL MOBILE
-   360px
-========================================================= */
+/* MOBILE */
 
-@media (max-width: 360px) {
+@media (max-width: 768px) {
 
-    .slides {
-        height: 230px;
+    .location-frame {
+        height: 2450px;
     }
 
-    .content h1 {
-        font-size: 22px;
-    }
-
-    .enquire-btn {
-        max-width: calc(100% - 80px);
-
-        font-size: 11px;
-
-        padding: 9px 12px;
-    }
-
-    .whatsapp {
-        width: 44px;
-        height: 44px;
-    }
-
-    .whatsapp i {
-        font-size: 27px;
-    }
 }
 
 
-/* =========================
-   TABLET
-========================= */
+/* SMALL MOBILE */
 
-@media (max-width: 1100px) {
+@media (max-width: 576px) {
 
-    .header {
-        padding: 0 5%;
+    .location-frame {
+        height: 2550px;
     }
 
-    .logo {
-        width: 180px;
-    }
-
-    .navbar {
-        gap: 20px;
-    }
-
-    .navbar a {
-        font-size: 12px;
-    }
-
-    .header-button {
-        padding: 11px 18px;
-        font-size: 11px;
-    }
 }
 
 
-/* =========================
-   MOBILE
-========================= */
+/* VERY SMALL MOBILE */
 
-@media (max-width: 800px) {
+@media (max-width: 400px) {
 
-    .header {
-        height: auto;
-
-        min-height: 70px;
-
-        padding: 12px 20px;
-
-        flex-wrap: wrap;
-
-        justify-content: center;
+    .location-frame {
+        height: 2550px;
     }
 
-    .logo {
-        width: 100%;
-
-        margin-bottom: 10px;
-    }
-
-    .logo-name {
-        font-size: 32px;
-    }
-
-    .navbar {
-        width: 100%;
-
-        order: 2;
-
-        gap: 15px;
-
-        flex-wrap: wrap;
-    }
-
-    .navbar a {
-        font-size: 10px;
-
-        letter-spacing: 0.7px;
-    }
-
-    .header-button {
-        display: none;
-    }
-
-    .hero {
-        min-height: 100vh;
-
-        background-position: center;
-    }
-
-    .hero-content {
-        padding-top: 160px;
-    }
-
-    .hero h1 {
-        font-size: 48px;
-
-        line-height: 0.95;
-    }
-
-    .hero-buttons {
-        flex-direction: column;
-
-        gap: 12px;
-    }
-
-    .btn {
-        width: 260px;
-    }
-}
-
-
-/* =========================
-   SMALL MOBILE
-========================= */
-
-@media (max-width: 480px) {
-
-    .navbar {
-        gap: 10px;
-    }
-
-    .navbar a {
-        font-size: 9px;
-    }
-
-    .hero h1 {
-        font-size: 40px;
-
-        letter-spacing: -1px;
-    }
-
-    .hero-small {
-        font-size: 10px;
-    }
 }
