@@ -1820,11 +1820,11 @@ hr {
 
     /* IFRAMES */
     .masterplan-frame {
-        height: 149vh;
+        height: 147vh;
     }
 
     .amenities-frame {
-        height: 123vh;
+        height: 113vh;
     }
 
     .location-frame {
@@ -2045,7 +2045,7 @@ hr {
 @media (max-width: 576px) {
 
     .location-frame {
-        height: 2550px;
+        height: 2500px;
     }
 
 }
@@ -2056,7 +2056,7 @@ hr {
 @media (max-width: 400px) {
 
     .location-frame {
-        height: 2550px;
+        height: 2650px;
     }
 
 }
