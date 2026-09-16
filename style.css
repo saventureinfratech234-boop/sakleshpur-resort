@@ -1127,7 +1127,7 @@ hr {
     }
 
     .location-frame {
-        height: 205vh;
+        height: 184vh;
     }
 }
 
@@ -1274,11 +1274,11 @@ hr {
     }
 
     .amenities-frame {
-        height: 135vh;
+        height: 138vh;
     }
 
     .location-frame {
-        height: 248vh;
+        height: 181vh;
     }
 }
 
@@ -1577,7 +1577,7 @@ hr {
     }
 
     .location-frame {
-        height: 246vh;
+        height: 190vh;
     }
 }
 
@@ -1961,7 +1961,7 @@ hr {
     }
 
     .location-frame {
-        height: 260vh;
+        height: 262vh;
     }
 }
 
@@ -2017,7 +2017,7 @@ hr {
     }
 
     .location-frame {
-        height: 262vh;
+        height: 269vh;
     }
 }
 
@@ -2057,10 +2057,14 @@ hr {
 
 /* VERY SMALL MOBILE */
 
-/* @media (max-width: 400px) {
+@media (max-width: 300px) {
 
     .location-frame {
-        height: 2480px;
+        height: 2660px;
     }
 
-} */
+    .amenities-frame {
+        height: 116vh;
+    }
+
+}
